@@ -1,22 +1,37 @@
 .greetingForm {
+    padding: 10px;
 }
 
 .inputAndButtonContainer {
 }
 
 .error {
+    color: red;
 }
 
-.input {
+.inputClass{
 }
 
 .input:focus {
+
 }
 
 .errorInput {
 }
 
 .button {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    left: 160px;
+    top: 465px;
+
+
+    /* Primary/100 */
+    color: white;
+    background: #0066CC;
+    opacity: 0.5;
+    border-radius: 3px;
 }
 
 .button:focus {
@@ -29,7 +44,10 @@
 }
 
 .text {
+
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .greeting {
+
 }
