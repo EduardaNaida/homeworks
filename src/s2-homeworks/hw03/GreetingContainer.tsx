@@ -15,7 +15,7 @@ export const pureAddUser = (name: any, setError: any, setName: any, addUserCallb
     } else {
         addUserCallback(name)
         setName(name)
-        setError('')
+        //setError('')
         alert(`Hello ${name}!`)
     }
 }
@@ -47,8 +47,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
 
-       // error &&
-        setError('')
+       error && setError('')
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
