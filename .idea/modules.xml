@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../-samurai-way/samurai-way/.idea/-samurai-way.iml" filepath="$PROJECT_DIR$/../-samurai-way/samurai-way/.idea/-samurai-way.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/homeworks.iml" filepath="$PROJECT_DIR$/.idea/homeworks.iml" />
       <module fileurl="file://$USER_HOME$/it-incubator1/.idea/it-incubator1.iml" filepath="$USER_HOME$/it-incubator1/.idea/it-incubator1.iml" />
     </modules>
