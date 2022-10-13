@@ -1,6 +1,6 @@
 .friendMessage {
     position: relative;
-    padding: 5px 5px 5px 5px;
+    padding: 30px;
     display: flex;
     align-items: flex-end;
 }
@@ -71,7 +71,7 @@
     width: 15px;
     height: 15px;
     left: 390px;
-    top: 30px;
+    top: 55px;
     background: radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 15px, #0066CC 0);
 }
 .friendTime {

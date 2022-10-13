@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="it-incubator1" />
     <orderEntry type="module" module-name="-samurai-way" />
+    <orderEntry type="module" module-name="src-1" />
+    <orderEntry type="module" module-name="src1" />
   </component>
 </module>
