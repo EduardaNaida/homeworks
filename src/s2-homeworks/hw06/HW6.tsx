@@ -19,7 +19,7 @@ const HW6 = () => {
     }
     const restore = () => {
         // делают студенты
-        setValue(value)
+        restoreState<string>('hw6-restore-span-value',value)
     }
 
     return (
