@@ -1,5 +1,32 @@
 .buttonsContainer {
+    display: flex;
+    margin-left: 20px;
+}
+
+.save {
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    margin: 10px 10px 10px 0px;
+
+    background: #0066CC;
+    border-radius: 3px;
+}
+
+.restore {
+
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+
+    margin: 10px 0px 10px 10px;
+    background: white;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+
 }
 
 .editableSpanContainer {
+    margin-left: 20px;
+    margin-top: 10px;
 }
