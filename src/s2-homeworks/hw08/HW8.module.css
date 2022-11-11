@@ -8,16 +8,78 @@
 }
 
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.buttonSortUp {
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    background: white;
+    width: 101px;
+    height: 30px;
+    left: 307px;
+    top: 996px;
+
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+}
+
+.buttonSortDown {
+    margin: 0 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    width: 123px;
+    height: 30px;
+    left: 420px;
+    top: 996px;
+
+    background: white;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+}
+
+.buttonCheck18 {
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    background: white;
+    width: 121px;
+    height: 30px;
+    left: 555px;
+    top: 996px;
+
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 .container {
+
 }
 
 .thead {
+    height: 36px;
+    background-color: rgba(161, 150, 180, 0.82);
 }
 
 .nameCol {
+    padding-left: 10px;
+    padding-right: 100px;
 }
 
 .ageCol {
+    padding-left: 100px;
+    padding-right: 100px;
 }

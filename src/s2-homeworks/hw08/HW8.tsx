@@ -63,6 +63,7 @@ const HW8 = () => {
                             id={'hw8-button-up'}
                             onClick={sortUp}
                             xType={currentSort === 'up' ? '' : 'secondary'}
+                            className={s.buttonSortUp}
                         >
                             Sort up
                         </SuperButton>
@@ -70,6 +71,7 @@ const HW8 = () => {
                             id={'hw8-button-down'}
                             onClick={sortDown}
                             xType={currentSort === 'down' ? '' : 'secondary'}
+                            className={s.buttonSortDown}
                         >
                             Sort down
                         </SuperButton>
@@ -77,6 +79,7 @@ const HW8 = () => {
                             id={'hw8-button-18'}
                             onClick={check18}
                             xType={currentSort === '18' ? '' : 'secondary'}
+                            className={s.buttonCheck18}
                         >
                             Check 18+
                         </SuperButton>
