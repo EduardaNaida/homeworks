@@ -5,7 +5,7 @@ import GreetingContainer from './GreetingContainer'
 
 /*
 * 1 - описать тип UserType
-* 2 - указать нужный тип в useState с users
+* 2 - указать нужный тип в useState с Users
 * 3 - дописать типы и логику функции pureAddUserCallback и проверить её тестами
 * 4 - в файле GreetingContainer.tsx дописать типизацию пропсов
 * 5 - в файле GreetingContainer.tsx указать нужные типы в useState с name и error

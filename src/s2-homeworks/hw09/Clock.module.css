@@ -1,14 +1,43 @@
 .buttonsContainer {
+    /*background-color: #8a71b6;*/
+    /*display: flex;*/
+    /*width: 100px;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
 }
 
+.ButtonStart{
+    background: #0066CC;
+    width: 84px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.ButtonStop{
+    background: #0066CC;
+    width: 84px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+
 .clock {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .watch {
 }
 
 .watch strong {
+
 }
 
 .more {
+    color: #00000080;
+    padding: 10px 0 10px 0;
 }

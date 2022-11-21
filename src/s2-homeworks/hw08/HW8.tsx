@@ -85,7 +85,7 @@ const HW8 = () => {
                         </SuperButton>
                     </div>
 
-                    <table id={'hw8-users'} className={s.users}>
+                    <table id={'hw8-Users'} className={s.users}>
                         <thead className={s.thead}>
                         <tr>
                             <td className={s.nameCol}>Name</td>
