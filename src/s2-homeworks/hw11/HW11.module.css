@@ -1,8 +1,14 @@
 .container {
+    width: 300px;
+    margin: 10px
 }
 
 .wrapper {
 }
 
 .number {
+}
+
+.slider {
+    color: #00CC22;
 }
