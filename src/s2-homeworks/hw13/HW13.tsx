@@ -36,12 +36,26 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
+                setText(text)
+                setInfo('')
                 // дописать
 
             })
             .catch((e) => {
                 // дописать
-
+                if (e.message === 'Request failed with status code 500') {
+                    setCode('Код 500!')
+                    setImage(error500)
+                    setInfo('')
+                } else if (e.message === 'Request failed with status code 400') {
+                    setImage(error400)
+                    setCode('Код 400!')
+                    setInfo('')
+                } else {
+                    setImage(errorUnknown)
+                    setInfo('')
+                    setCode('Error!')
+                }
             })
     }
 
@@ -56,6 +70,8 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        className={s.button}
+                        disabled={info === '...loading'}
 
                     >
                         Send true
@@ -65,7 +81,8 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
-
+                        className={s.button}
+                        disabled={info === '...loading'}
                     >
                         Send false
                     </SuperButton>
@@ -74,6 +91,8 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
+                        className={s.button}
+                        disabled={info === '...loading'}
 
                     >
                         Send undefined
@@ -83,6 +102,8 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        className={s.button}
+                        disabled={info === '...loading'}
 
                     >
                         Send null

@@ -1,7 +1,24 @@
 .buttonsContainer {
+    display: flex;
+}
+
+.button {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*!*align-items: center;*!*/
+    padding: 5px 24px;
+
+    /* Primary/100 */
+    background: #0066CC;
+    color: white;
+    border-radius: 3px;
 }
 
 .responseContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .imageContainer {
@@ -10,7 +27,10 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
 }
 
 .code {
@@ -18,5 +38,6 @@
 
 .text {
 }
+
 .info {
 }
