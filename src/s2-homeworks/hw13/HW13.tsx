@@ -36,8 +36,7 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText('...всё ок)\n' +
-                    'код 200 - обычно означает что скорее всего всё ок)')
+                setText('...всё ок)')
                 setInfo('')
                 // дописать
 
@@ -47,21 +46,18 @@ const HW13 = () => {
                 if (e.message === 'Request failed with status code 500') {
                     setCode('Код 500!')
                     setImage(error500)
-                    setText('эмитация ошибки на сервере\n' +
-                        'ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
+                    setText('эмитация ошибки на сервере')
                     setInfo('')
                 } else if (e.message === 'Request failed with status code 400') {
                     setImage(error400)
                     setCode('Код 400!')
-                    setText('Ты не отправил success в body вообще!\n' +
-                        'ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
+                    setText('Ты не отправил success в body вообще!')
                     setInfo('')
                 } else {
                     setImage(errorUnknown)
                     setInfo('')
                     setCode('Error!')
-                    setText('Network Error\n' +
-                        'AxiosError')
+                    setText('Error')
                 }
             })
     }
