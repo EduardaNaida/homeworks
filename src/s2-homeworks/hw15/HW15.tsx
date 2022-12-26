@@ -67,12 +67,14 @@ const HW15 = () => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
-        sendQuery({page: newPage, count: newCount})
+        // const params = Object.fromEntries(searchParams)
+        // sendQuery(params)
+        // sendQuery({page: newPage, count: newCount})
 
         setSearchParams({
-            sort: sort,
+            count: newCount.toString(),
             page: newPage.toString(),
-            count: newCount.toString()
+            sort: sort,
         })
         setLoading(false)
 
@@ -84,13 +86,18 @@ const HW15 = () => {
         setPage(1)
 
         setSearchParams({
-            sort: newSort,
+            count: count.toString(),
             page: page.toString(),
-            count: count.toString()
+            sort: newSort
         })
+        // const params = Object.fromEntries(searchParams)
+        // sendQuery(params)
+    }
+
+    useEffect(() => {
         const params = Object.fromEntries(searchParams)
         sendQuery(params)
-    }
+    }, [searchParams])
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
