@@ -59,7 +59,6 @@ const HW15 = () => {
                 }
                 // сохранить пришедшие данные
 
-                //
             })
     }
 
@@ -67,10 +66,6 @@ const HW15 = () => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
-        // const params = Object.fromEntries(searchParams)
-        // sendQuery(params)
-        // sendQuery({page: newPage, count: newCount})
-
         setSearchParams({
             count: newCount.toString(),
             page: newPage.toString(),
@@ -90,8 +85,6 @@ const HW15 = () => {
             page: page.toString(),
             sort: newSort
         })
-        // const params = Object.fromEntries(searchParams)
-        // sendQuery(params)
     }
 
     useEffect(() => {
