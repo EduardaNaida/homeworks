@@ -36,31 +36,28 @@ const HW14 = () => {
             .then((res) => {
                 if (res) {
                     setTechs(res.data.techs)
+                    setLoading(false)
                 }
-                // делает студент
-                // сохранить пришедшие данные
-
-                //
             })
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
-        // делает студент
 
-        // добавить/заменить значение в квери урла
-        searchParams.set(value, '');
-
-        setSearchParams(searchParams)
-        console.log(searchParams)
-        //console.log(searchParams, 'search')
-        // console.log(value, 'value')
-        //
+        if (!value.length) {
+            searchParams.delete('find')
+            setSearchParams(searchParams)
+        } else {
+            setSearchParams({
+                ...Object.fromEntries(searchParams),
+                find: value
+            })
+        }
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        console.log(params, 'params')
+
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])

@@ -3,5 +3,11 @@
 }
 
 .loading {
+    width: 145px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: flex-end;
 
+    color: #4D4D4D;
 }
